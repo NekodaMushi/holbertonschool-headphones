@@ -1,0 +1,26 @@
+:root {
+  --color-dark: #051020;
+  --color-light: #eaebec;
+  --color-pink: #fc5c5c;
+  --color-pink-hover: #bf5858;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+li {
+  list-style: none;
+}
