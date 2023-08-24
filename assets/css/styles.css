@@ -1,9 +1,3 @@
-:root {
-  --color-dark: #051020;
-  --color-light: #eaebec;
-  --color-pink: #fc5c5c;
-  --color-pink-hover: #bf5858; }
-
 * {
   margin: 0;
   padding: 0; }
@@ -14,26 +8,42 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  margin: 0;
   font-size: 1.6rem; }
 
 li {
   list-style: none; }
 
+p {
+  line-height: 3.125rem;
+  text-align: center; }
+
+.light {
+  color: #ffffff; }
+
 a {
-  color: var(--color-light);
-  text-decoration: none; }
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 800; }
 
 nav {
   display: flex;
   width: 100%;
   justify-content: space-around;
   margin-top: 2.31%; }
+  nav #menu-toggle {
+    display: none; }
+  nav .hamburger,
+  nav .close {
+    display: none;
+    padding-top: 1rem;
+    filter: invert(1); }
   nav .nav-links {
     display: flex;
     justify-content: space-between;
     width: 20%;
     margin-top: 1.5%; }
+  nav .nav-link:hover a {
+    color: #bf5858; }
 
 header {
   background-image: url("../img/headphones_hero_1.jpg");
@@ -50,5 +60,80 @@ header {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 7.19%;
+  margin-bottom: 7.79%;
   max-width: 75.1rem; }
+
+.btn-primary {
+  background-color: #FF6565;
+  color: #ffffff;
+  border-radius: 1.975rem;
+  border: none;
+  padding: 15.1px 31.75px;
+  margin-top: 3.9rem;
+  margin-bottom: 8rem;
+  font-size: 1.25rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .btn-primary:hover {
+    opacity: 0.9; }
+
+@media screen and (max-width: 480px) {
+  nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1.5rem; }
+    nav .nav-links {
+      display: none;
+      justify-content: space-around;
+      flex-direction: column;
+      position: absolute;
+      top: 10rem;
+      width: 100%;
+      text-align: center;
+      align-items: center; }
+    nav .nav-link {
+      padding: 1.5rem; }
+    nav .menu-icon {
+      position: absolute;
+      left: 1rem;
+      top: 1rem; }
+    nav .hamburger,
+    nav .close {
+      display: flex;
+      padding: 2rem 4rem 0 2rem;
+      height: 2rem;
+      width: 2rem;
+      filter: invert(1);
+      transition: opacity 0.3s ease; }
+    nav .hamburger {
+      opacity: 1; }
+    nav .close {
+      opacity: 0; }
+    nav .menu-toggle {
+      display: none; }
+      nav .menu-toggle:checked ~ .menu-icon .hamburger {
+        opacity: 0; }
+      nav .menu-toggle:checked ~ .menu-icon .close {
+        opacity: 1; }
+      nav .menu-toggle:checked ~ .nav-links {
+        display: flex; }
+    nav .logo {
+      display: flex;
+      justify-content: center;
+      width: 25rem; }
+  .hero-heading,
+  .hero-sub-heading,
+  .hero-text {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto; } }
+
+@media screen and (min-width: 650px) {
+  .logo {
+    position: absolute;
+    left: 29rem;
+    width: 20rem; } }

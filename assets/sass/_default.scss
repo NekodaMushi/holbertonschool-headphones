@@ -1,9 +1,11 @@
-:root {
-  --color-dark: #051020;
-  --color-light: #eaebec;
-  --color-pink: #fc5c5c;
-  --color-pink-hover: #bf5858;
-}
+$color-dark: #051020;
+$color-light: #ffffff;
+$color-pink: #FF6565;
+$color-pink-hover: #bf5858;
+$bold: 800;
+
+
+
 
 * {
   margin: 0;
@@ -17,10 +19,28 @@ html {
 
 body {
   font-family: "Source Sans Pro", sans-serif;
-  margin: 0;
   font-size: 1.6rem;
 }
 
 li {
   list-style: none;
 }
+
+p {
+  line-height: 3.125rem;
+  text-align: center;
+
+
+}
+
+.light {
+  color: $color-light;
+}
+
+// .bold {
+//   --bold
+// }
+
+// .dark {
+//   color: var(--color-dark);
+// }
