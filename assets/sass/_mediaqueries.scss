@@ -80,23 +80,130 @@
   .hero-heading,
   .hero-sub-heading,
   .hero-text {
-    text-align: center; // Center the text
-    max-width: 90%; // Control the width if needed
-    margin: 0 auto; // Center block elements if needed
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+
+    // // Section -- What we do --
+
+    // .icon {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+
+    // .icon_components {
+    //   margin: 20px 0; // Vertical margin between components
+    //   padding: 10px; // Padding around each component
+    //   text-align: center;
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+
+    // .img_icon {
+    //   margin: auto; // Center the image icon
+    //   width: 100px; // Specify a width
+    //   height: 100px; // Specify a height
+    // }
+
+    // .title_icon {
+    //   font-weight: 700;
+    //   padding: 10px; // Padding between the title and other elements
+    // }
+
+    // .text_icon {
+    //   line-height: 25px;
+    //   padding: 10px; // Padding between the text and other elements
+    // }
+
+
+
+
+
+
   }
+}
 
 
 
-
-
+@media screen and (min-width: 650px) {
+  & .logo {
+    // position: absolute;
+    left: 29rem;
+    width: 20rem;
+  }
 
 
 }
 
-@media screen and (min-width: 650px) {
-  & .logo {
-    position: absolute;
-    left: 29rem;
-    width: 20rem;
+
+@media screen and (min-width: 481px) {
+  .text_wwd {
+    width: 30rem;
+  }
+
+  .icon {
+    grid-template-columns: auto auto;
+  }
+
+  .header {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .menu-icon,
+  .navicon {
+    display: none;
+  }
+
+  .logo-container {
+    flex: unset;
+    margin: 1.6rem 2rem;
+  }
+
+  .menu {
+    display: flex;
+    max-height: 100%;
+    align-items: center;
+    padding-right: 2rem;
+  }
+
+  .menu__icon {
+    gap: 2rem
+  }
+
+  .menu__item {
+    width: unset;
+  }
+
+  .menu__link {
+    padding: 0.5rem 0;
+  }
+
+  .hero div.content {
+    padding-top: 17.1rem;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .text_what {
+    width: 65rem;
+  }
+
+  .icon {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .menu__icon {
+    gap: 4rem
+  }
+
+  .content-text~p {
+    display: block;
+  }
+
+  .hero div.content {
+    padding-bottom: 7.5rem;
   }
 }
