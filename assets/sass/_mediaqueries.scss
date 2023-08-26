@@ -67,14 +67,18 @@
     }
 
     .logo {
-      // position: relative;
+
       display: flex;
       justify-content: center;
-      // padding-left: 5rem;
+
       width: 25rem;
-      // height: auto;
+
 
     }
+  }
+
+  .hero-heading {
+    font-size: 3rem;
   }
 
   .hero-heading,
@@ -83,43 +87,6 @@
     text-align: center;
     max-width: 90%;
     margin: 0 auto;
-
-    // // Section -- What we do --
-
-    // .icon {
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    // }
-
-    // .icon_components {
-    //   margin: 20px 0; // Vertical margin between components
-    //   padding: 10px; // Padding around each component
-    //   text-align: center;
-    //   display: flex;
-    //   flex-direction: column;
-    //   align-items: center;
-    // }
-
-    // .img_icon {
-    //   margin: auto; // Center the image icon
-    //   width: 100px; // Specify a width
-    //   height: 100px; // Specify a height
-    // }
-
-    // .title_icon {
-    //   font-weight: 700;
-    //   padding: 10px; // Padding between the title and other elements
-    // }
-
-    // .text_icon {
-    //   line-height: 25px;
-    //   padding: 10px; // Padding between the text and other elements
-    // }
-
-
-
-
 
 
   }
@@ -184,6 +151,17 @@
   .hero div.content {
     padding-top: 17.1rem;
   }
+}
+
+
+// Our result
+
+.result_title {
+  font-size: 2.1rem;
+}
+
+#resultext {
+  width: 31rem;
 }
 
 @media screen and (min-width: 769px) {

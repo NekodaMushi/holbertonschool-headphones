@@ -20,6 +20,10 @@ header {
   max-width: 75.1rem;
 }
 
+.hero-heading {
+  font-size: 3rem;
+}
+
 // Section What we do
 
 
@@ -75,4 +79,63 @@ header {
 
 .text_icon {
   line-height: 2.5rem;
+}
+
+
+// Our Results
+
+.results {
+  background-image: url("../img/headphones_hero_2.jpg");
+  background-position: center;
+  background-size: cover;
+
+}
+
+#resultext {
+  width: 49rem;
+}
+
+.penta {
+  width: 19rem;
+  height: 15rem;
+}
+
+.content-penta {
+  transform: translate(0%, -134%);
+}
+
+.text-percent {
+  font-size: 4rem;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+
+
+// Contact Us
+
+
+.contact-block {
+  padding-top: 8rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // width: 400px;
+}
+
+
+.input {
+  margin: 2rem;
+  border: none;
+  border-bottom: solid grey 1px;
+
+
+
 }
